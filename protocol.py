@@ -151,14 +151,22 @@ from cStringIO import StringIO
 from io import SEEK_CUR
 from operator import itemgetter
 
-MAGIC_NUMBER = "\xF9\xBE\xB4\xD9"
-PORT = 8333
+#MAGIC_NUMBER = "\xF9\xBE\xB4\xD9"
+MAGIC_NUMBER = "\x90\x0D\x90\x3C"
+#PORT = 8333
+PORT = 9900
+#MIN_PROTOCOL_VERSION = 70001
+#PROTOCOL_VERSION = 70015
 MIN_PROTOCOL_VERSION = 70001
-PROTOCOL_VERSION = 70015
-FROM_SERVICES = 0
-TO_SERVICES = 1  # NODE_NETWORK
+PROTOCOL_VERSION = 70208
+#FROM_SERVICES = 0
+FROM_SERVICES = 5
+#TO_SERVICES = 1  # NODE_NETWORK
+TO_SERVICES = 5  # NODE_NETWORK
 USER_AGENT = "/bitnodes.earn.com:0.1/"
-HEIGHT = 478000
+USER_AGENT = "/bitnodes.vpubchain.net:0.1/"
+#HEIGHT = 478000
+HEIGHT = 20000
 RELAY = 0  # set to 1 to receive all txs
 
 SOCKET_BUFSIZE = 8192
@@ -955,7 +963,8 @@ class Connection(object):
 
 
 def main():
-    to_addr = ("136.243.139.96", PORT)
+    #to_addr = ("136.243.139.96", PORT)
+    to_addr = ("47.104.25.28", PORT)
     to_services = TO_SERVICES
 
     handshake_msgs = []

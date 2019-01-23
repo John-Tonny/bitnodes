@@ -1,25 +1,35 @@
 [crawl]
 
 # Logfile
-logfile = log/crawl.f9beb4d9.log
+#logfile = log/crawl.f9beb4d9.log
+logfile = log/crawl.log
 
 # Network magic number
-magic_number = f9beb4d9
+#magic_number = f9beb4d9
+magic_number = 900d903c
 
 # Default/fallback port number
-port = 8333
+#port = 8333
+port = 9900
 
 # Redis database number
 db = 0
 
+#to_services
+to_services = 5
+
+#from_services
+from_services = 5
+
+
 # List of DNS seeders to get a subset of reachable nodes
 seeders =
-    dnsseed.bitcoin.dashjr.org
-    dnsseed.bluematt.me
-    seed.bitcoin.sipa.be
-    seed.bitcoinstats.com
-    seed.bitcoin.sprovoost.nl
-    seed.bitnodes.io
+#    dnsseed.bitcoin.dashjr.org
+#    dnsseed.bluematt.me
+#    seed.bitcoin.sipa.be
+#    seed.bitcoinstats.com
+#    seed.bitcoin.sprovoost.nl
+#    seed.bitnodes.io
 
 # Number of concurrent workers (greenlets)
 workers = 700
@@ -31,7 +41,8 @@ debug = False
 source_address = 0.0.0.0
 
 # Protocol version to use for outgoing version message
-protocol_version = 70015
+#protocol_version = 70015
+protocol_version = 70208
 
 # User agent (BIP 0014) to use for outgoing version message
 # -----------------------------------------------------------------------------
@@ -108,7 +119,8 @@ exclude_ipv4_bogons = True
 exclude_ipv6_bogons = False
 
 # Attempt to establish connection with .onion nodes
-onion = True
+#onion = True
+onion = False
 
 # Tor proxy is required to connect to .onion address
 tor_proxy = 127.0.0.1:9050
@@ -140,4 +152,5 @@ onion_nodes =
 include_checked = False
 
 # Relative path to directory containing timestamp-prefixed JSON crawl files
-crawl_dir = data/crawl/f9beb4d9
+#crawl_dir = data/crawl/f9beb4d9
+crawl_dir = data/crawl

@@ -1,10 +1,12 @@
 [seeder]
 
 # Logfile
-logfile = log/seeder.f9beb4d9.log
+#logfile = log/seeder.f9beb4d9.log
+logfile = log/seeder.log
 
 # Default/fallback port number
-port = 8333
+#port = 8333
+port = 9900
 
 # Redis database number
 db = 0
@@ -13,7 +15,8 @@ db = 0
 debug = False
 
 # Relative path to directory containing timestamp-prefixed JSON export files
-export_dir = data/export/f9beb4d9
+#export_dir = data/export/f9beb4d9
+export_dir = data/export
 
 # Minimum age for exported nodes
 min_age = 28800
