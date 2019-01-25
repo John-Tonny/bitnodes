@@ -19,7 +19,7 @@ db = 0
 to_services = 5
 
 #from_services
-from_services = 5
+from_services = 0
 
 
 # List of DNS seeders to get a subset of reachable nodes
